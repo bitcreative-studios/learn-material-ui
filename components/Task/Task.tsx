@@ -1,4 +1,5 @@
 import React from 'react'
+import { Typography } from '@material-ui/core'
 
 type Task = {
   id: string
@@ -8,7 +9,7 @@ type Task = {
   state: string
 }
 
-type TaskProps = {
+export type TaskProps = {
   task: Task
   //
   onPinTask: () => void

@@ -1,13 +1,15 @@
 import React from 'react'
 
-import Task from './Task'
+import { Meta, Story } from '@storybook/react'
+
+import Task, { TaskProps } from './Task'
 
 export default {
-  title: 'Taskbook/Task',
+  title: 'Task Book/Task',
   component: Task,
-}
+} as Meta
 
-const Template = args => <Task {...args} />
+const Template: Story<TaskProps> = args => <Task {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
